@@ -3,9 +3,12 @@
 import React from "react";
 import styles from "./Checkout.css";
 import { useState, useEffect } from "react";
+import Link from 'next/link'
 
 const Checkout = () => {
   const [total, settotal] = useState(0);
+
+  const[payment, setpayment]=useState([]);
 
   const [products, setproducts] = useState([]);
   useEffect(() => {
@@ -16,6 +19,7 @@ const Checkout = () => {
       .then((data) => {
         console.log(data);
         setproducts(data.products);
+        setpayment(data.paymentMethods);
         var total = 0;
         for (let i of data.products) {
           total += i.price * i.quantity;
@@ -120,9 +124,18 @@ const Checkout = () => {
                 })}
               </div>
             </div>
+            <Link 
+            href={{
+                pathname:'/payment',
+                query: {
+                    total:total ,
+                    paymentmethod:payment.join(',')
+                }
+            }}>
             <div className="summary-checkout">
               <button className="checkout-cta">Go to Secure Checkout</button>
             </div>
+            </Link>
           </div>
         </aside>
       </main>

@@ -100,8 +100,8 @@ body {
     color: #28333b;
   }
   .card .card-body .payment-type .types .type.selected {
-    border-color: #40b3ff;
-    background: rgba(64,179,255,0.1);
+    
+    
   }
   .card .card-body .payment-type .types .type.selected .logo {
     color: #40b3ff;
