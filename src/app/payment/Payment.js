@@ -23,7 +23,15 @@ const Payment = () => {
       <article className="card">
         <div className="container">
           <div className="card-title">
-            <h2>Payment</h2>
+            <h2>
+              Payment Total:{" "}
+              <span className="">
+                {total.toLocaleString("en-IN", {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })}
+              </span>
+            </h2>
           </div>
           <div className="card-body">
             <div className="payment-type">
@@ -37,8 +45,7 @@ const Payment = () => {
                     </div>
                     <div className="text">
                       <ToggleButton
-                        
-                        selected={selected==i}
+                        selected={selected == i}
                         onChange={() => {
                           setSelected(i);
                         }}
