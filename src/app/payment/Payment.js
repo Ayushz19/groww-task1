@@ -4,6 +4,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 
 import styles from "./Payment.css";
 import { useState, useEffect } from "react";
+import Link from 'next/link'
 
 const Payment = () => {
   const searchParams = useSearchParams();
@@ -101,7 +102,14 @@ const Payment = () => {
             </div>
             <div className="flex-end">
               <button className="button button-link">Back to Shipping</button>
-              <button className="button button-primary">Proceed</button>
+            <Link 
+            href={{
+              pathname:'/status',
+              query:{
+                total:total
+              }
+            }}
+            >  <button className="button button-primary">Proceed</button></Link>
             </div>
           </div>
         </div>

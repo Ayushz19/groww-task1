@@ -30,6 +30,26 @@
     background-color: #60c878;
     border: 5px solid #fff;
   }
+  .card__success1 {
+    position: absolute;
+    top: -50px;
+    left: 145px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #bf2311;
+    border: 5px solid #fff;
+  }
+  .card__success2 {
+    position: absolute;
+    top: -50px;
+    left: 145px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #cf932c;
+    border: 5px solid #fff;
+  }
   .card__success i {
     color: #fff;
     line-height: 100px;

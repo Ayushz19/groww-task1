@@ -4,19 +4,23 @@ import React from "react";
 import styles from "./Checkout.css";
 import { useState, useEffect } from "react";
 import Link from 'next/link'
+import Loader from "./Loader";
 
 const Checkout = () => {
   const [total, settotal] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   const[payment, setpayment]=useState([]);
 
   const [products, setproducts] = useState([]);
   useEffect(() => {
+    setLoading(true);
     fetch("https://groww-intern-assignment.vercel.app/v1/api/order-details")
       .then((res) => {
         return res.json();
       })
       .then((data) => {
+        setLoading(false);
         console.log(data);
         setproducts(data.products);
         setpayment(data.paymentMethods);
@@ -27,7 +31,7 @@ const Checkout = () => {
         settotal(total);
       });
   }, []);
-
+  if (loading) return <Loader />
   return (
     <div className="Main">
       <main>
