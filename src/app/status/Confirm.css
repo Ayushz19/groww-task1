@@ -50,7 +50,7 @@
     background-color: #cf932c;
     border: 5px solid #fff;
   }
-  .card__success i {
+  .card__success , .card__success1 , .card__success2 i {
     color: #fff;
     line-height: 100px;
     font-size: 45px;
