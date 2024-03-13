@@ -9,9 +9,9 @@ html a {
 }
 
 body {
-  background-color: #fff;
-  color: #666;
-  font-family: "Open Sans", sans-serif;
+  background-color: #424242;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 62.5%;
   margin: 0 auto;
 }
@@ -24,14 +24,16 @@ a {
 
 strong {
   font-weight: bold;
+  
 }
 
 p {
   margin: 0.75rem 0 0;
+  color: white;
 }
 
 h1 {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -94,6 +96,8 @@ main {
   overflow: hidden;
   padding: 1rem 0;
   width: 960px;
+  background-color: #424242;
+    color: white;
 }
 
 .basket,
@@ -109,7 +113,7 @@ aside {
 }
 
 .basket-module {
-  color: #111;
+  color: white;
 }
 
 label {
@@ -154,7 +158,7 @@ ul {
 }
 
 li {
-  color: #111;
+  color: white;
   display: inline-block;
   padding: 0.625rem 0;
 }
@@ -210,6 +214,8 @@ li.subtotal:before {
 
 .product-image {
   width: 35%;
+  
+  /* mix-blend-mode: multiply; */
 }
 
 .product-details {
@@ -217,7 +223,7 @@ li.subtotal:before {
 }
 
 .product-frame {
-  border: 1px solid #aaa;
+  
 }
 
 .product-details {
@@ -228,11 +234,11 @@ li.subtotal:before {
 }
 
 .quantity-field {
-  background-color: #ccc;
-  border: 1px solid #aaa;
+  
+  
   border-radius: 4px;
-  font-size: 0.625rem;
-  padding: 2px;
+  /* font-size: 0.625rem; */
+  padding: 10px;
   width: 3.75rem;
 }
 
@@ -243,18 +249,23 @@ aside {
 }
 
 .summary {
-  background-color: #eee;
-  border: 1px solid #aaa;
+  background-color: rgb(59 113 202);
+  border: 1px solid #288ba9;
   padding: 1rem;
   position: fixed;
   width: 250px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+.summary > *
+{
+  color: white;
 }
 
 .summary-total-items {
-  color: #666;
+  color: white;
   font-size: 0.875rem;
   text-align: center;
 }
@@ -267,6 +278,7 @@ aside {
   margin: 1rem 0;
   overflow: hidden;
   padding: 0.5rem 0;
+  font-size: 22px;
 }
 
 .subtotal-title,
@@ -275,7 +287,7 @@ aside {
 .total-value,
 .promo-title,
 .promo-value {
-  color: #111;
+  color: white;
   float: left;
   width: 50%;
 }
@@ -325,6 +337,8 @@ aside {
   text-transform: uppercase;
   padding: 0.625rem 0;
   width: 100%;
+  background-color: #54b4d3;
+  box-shadow: 0 4px 9px -4px rgba(0,0,0,.35);
 }
 
 .summary-delivery-selection {

@@ -7,7 +7,7 @@ const Confirm = () => {
   const searchParams = useSearchParams();
   const [total, settotal] = useState(0);
 
-  const [payment, setpayment] = useState([]);
+ 
   const [random, setRandom] = useState(0);
   useEffect(() => {
     settotal(searchParams.get("total"));
@@ -64,7 +64,7 @@ const Confirm = () => {
               <h1 className="card__price">
                 <span>₹</span>
                 <span className="">
-                {total.toLocaleString("en-IN", {
+                {Number(total).toLocaleString("en-IN", {
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                 })}

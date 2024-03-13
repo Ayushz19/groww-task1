@@ -52,7 +52,7 @@ const Checkout = () => {
               <li className="item item-heading">Item</li>
               <li className="price">Price</li>
               <li className="quantity">Quantity</li>
-              <li className="subtotal">Subtotal</li>
+              <li className="subtotal ">Subtotal</li>
             </ul>
           </div>
           {products.map((e, i) => {
@@ -75,11 +75,11 @@ const Checkout = () => {
                     </h1>
                   </div>
                 </div>
-                <div className="price">{e.price}</div>
+                <div className="price text-xl ">{e.price}</div>
                 <div className="quantity">
-                  <strong className="quantity-field">{e.quantity}</strong>
+                  <strong className="quantity-field text-blue-500 text-[20px]">{e.quantity}</strong>
                 </div>
-                <div className="subtotal">{e.price * e.quantity}</div>
+                <div className="subtotal text-xl">{e.price * e.quantity}</div>
               </div>
             );
           })}
@@ -91,7 +91,7 @@ const Checkout = () => {
             </div>
             <div className="summary-subtotal">
               <div className="subtotal-title">Subtotal</div>
-              <div className="subtotal-value final-value" id="basket-subtotal">
+              <div className="subtotal-value final-value " id="basket-subtotal">
                 {total.toLocaleString("en-IN", {
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
