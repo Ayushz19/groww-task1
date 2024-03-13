@@ -57,13 +57,13 @@
   }
   .card__msg {
     text-transform: uppercase;
-    color: #55585b;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 5px;
   }
   .card__submsg {
-    color: #959a9e;
+    color: black;
     font-size: 16px;
     font-weight: 400;
     margin-top: 0px;
@@ -157,7 +157,7 @@
     box-sizing: border-box;
     padding: 3px 5px;
     border-radius: 3px;
-    font-size: 10px;
-    color: #d3cece;
+   
+    
   }
   

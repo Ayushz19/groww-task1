@@ -55,7 +55,7 @@ const Confirm = () => {
               </svg>
             </span>
             <h1 className="card__msg">Payment Complete</h1>
-            <h2 className="card__submsg">Thank you for your transfer</h2>
+            <h2 className="card__submsg text-black">Thank you for your transfer</h2>
             <div className="card__body">
               <div className="card__recipient-info">
                 <p className="card__recipient">Nath Green</p>
@@ -72,8 +72,8 @@ const Confirm = () => {
               </h1>
             </div>
             <div className="card__tags">
-              <span className="card__tag">completed</span>
-              <span className="card__tag">#123456789</span>
+              <span className="card__tag text-green-500 text-md">completed</span>
+              <span className="card__tag text-green-500">#123456789</span>
             </div>
           </>
         )}
@@ -120,8 +120,8 @@ const Confirm = () => {
               <i className="ion-checkmark" /> <p className="text-[4rem] text-white">!</p>
             </span>
             <h1 className="card__msg">Payment pending</h1>
-            <h1 className="font-bold">Your Payment is pending</h1>
-            <h1 className="mx-100 px-10">
+            <h1 className="font-bold text-black">Your Payment is pending</h1>
+            <h1 className="mx-100 px-10 text-black">
               Kindly Wait until we process your payment
             </h1>
           </>

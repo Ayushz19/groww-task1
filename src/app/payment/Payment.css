@@ -1,6 +1,6 @@
 body {
-    background: #f2f4f7;
-    color: #28333b;
+    background: #fffdfd5f;
+    color: white;
     font-family: 'DM Sans', sans-serif;
     font-size: 1em;
     padding: 0px 25px;
@@ -55,7 +55,7 @@ body {
     padding: 50px;
     margin: 50px auto;
     max-width: 850px;
-    background: #fff;
+    background: #424242;
     border-radius: 6px;
     box-sizing: border-box;
     box-shadow: 0px 24px 60px -1px rgba(37,44,54,0.14);
@@ -81,11 +81,11 @@ body {
     margin: 25px 0;
   }
   .card .card-body .payment-type .types .type {
-    width: 30%;
+    
     position: relative;
-    background: #f2f4f7;
+    background: white;
     border: 2px solid #e8ebed;
-    padding: 25px;
+    
     box-sizing: border-box;
     border-radius: 6px;
     cursor: pointer;
@@ -109,7 +109,7 @@ body {
   .card .card-body .payment-type .types .type.selected p {
     color: #28333b;
   }
-  .card .card-body .payment-type .types .type.selected::after {
+  /* .card .card-body .payment-type .types .type.selected::after {
     content: '\f00c';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -124,7 +124,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
   .card .card-body .payment-type .types .type .logo,
   .card .card-body .payment-type .types .type p {
     transition: all 0.5s ease;
@@ -139,7 +139,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.5px;
-    color: #8a959c;
+    color: white;
   }
   .card .card-body .payment-info .column {
     width: calc(50% - 25px);
@@ -199,10 +199,10 @@ body {
   .button.button-secondary {
     background: transparent;
     border-color: #e8ebed;
-    color: #8a959c;
+    color: white;
   }
   .button.button-secondary:hover {
     border-color: #28333b;
-    color: #28333b;
+    color: white;
   }
   

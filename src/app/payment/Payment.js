@@ -24,10 +24,10 @@ const Payment = () => {
       <article className="card">
         <div className="container">
           <div className="card-title">
-            <h2>
+            <h2 className="text-xl ">
               Payment Total:{" "}
-              <span className="">
-                {total.toLocaleString("en-IN", {
+              <span className="font-extrabold text-[28px] text-green-300">
+              ₹ {total.toLocaleString("en-IN", {
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                 })}
@@ -38,12 +38,10 @@ const Payment = () => {
             <div className="payment-type">
               <h4>Choose payment method below</h4>
 
-              <div className="types flex justify-space-between">
+              <div className="types flex gap-8">
                 {payment.map((e, i) => (
                   <div className="type selected" key={i}>
-                    <div className="logo">
-                      <i className="far fa-credit-card" />
-                    </div>
+                 
                     <div className="text">
                       <ToggleButton
                         selected={selected == i}
