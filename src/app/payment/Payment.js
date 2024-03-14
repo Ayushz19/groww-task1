@@ -4,7 +4,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 
 import styles from "./Payment.css";
 import { useState, useEffect } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Payment = () => {
   const searchParams = useSearchParams();
@@ -27,7 +27,8 @@ const Payment = () => {
             <h2 className="text-xl ">
               Payment Total:{" "}
               <span className="font-extrabold text-[28px] text-green-300">
-              ₹ {total.toLocaleString("en-IN", {
+                ₹{" "}
+                {total.toLocaleString("en-IN", {
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                 })}
@@ -41,7 +42,6 @@ const Payment = () => {
               <div className="types flex gap-8">
                 {payment.map((e, i) => (
                   <div className="type selected" key={i}>
-                 
                     <div className="text">
                       <ToggleButton
                         selected={selected == i}
@@ -100,14 +100,17 @@ const Payment = () => {
             </div>
             <div className="flex-end">
               <button className="button button-link">Back to Shipping</button>
-            <Link 
-            href={{
-              pathname:'/status',
-              query:{
-                total:total
-              }
-            }}
-            >  <button className="button button-primary">Proceed</button></Link>
+              <Link
+                href={{
+                  pathname: "/status",
+                  query: {
+                    total: total,
+                  },
+                }}
+              >
+                {" "}
+                <button className="button button-primary">Proceed</button>
+              </Link>
             </div>
           </div>
         </div>
