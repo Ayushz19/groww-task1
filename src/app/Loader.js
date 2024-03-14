@@ -1,9 +1,20 @@
 import React from 'react'
 
+
 const Loader = () => {
   return (
-    <div>Loader</div>
+    <div>
+lkweknerogn
+    </div>
   )
 }
 
-export default Loader
+export default Loader;
+
+
+
+
+
+
+
+// Default values shown  

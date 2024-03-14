@@ -1,10 +1,12 @@
 import React from 'react'
 import Payment from './Payment'
+import Loader from '../Loader'
+import { Suspense } from 'react';
 const page = () => {
   return (
-    <div>
+    <Suspense fallback={<Loader />}>
         <Payment />
-    </div>
+    </Suspense>
   )
 }
 

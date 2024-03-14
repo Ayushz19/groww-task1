@@ -1,12 +1,14 @@
 import React from "react";
-
+import { Suspense } from 'react';
 import Confirm from "./Confirm.js";
+import Loader from "../Loader.js";
 
 const page = () => {
   return (
-    <div>
+
+     <Suspense fallback={<Loader />}>
       <Confirm />
-    </div>
+    </Suspense>
   );
 };
 

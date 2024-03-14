@@ -1,10 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import React from "react";
-import styles from "./Checkout.css";
+import  "./Checkout.css";
 import { useState, useEffect } from "react";
 import Link from 'next/link'
 import Loader from "./Loader";
+
 
 const Checkout = () => {
   const [total, settotal] = useState(0);
