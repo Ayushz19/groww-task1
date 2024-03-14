@@ -1,6 +1,19 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+open https://groww1-task.netlify.app/ in your browser to visit the project
+
+SPECIFICATIONS-
+1.User friendly UI and color scheme used
+2.It contains 3 pages 
+  i.checkout page gathers total bill and then click on secure checkout button it will redirect to Payment page
+  ii.Payment page lets user select upi or card (fetching from api) and click on proceed , it will redirect to payment status page
+  iii. Payment status page will randomise your status to Successfull , Pending and failed
+
+
+
+
+//RUN ON LOCAL
 
 First, run the development server:
 
