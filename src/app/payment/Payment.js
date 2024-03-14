@@ -98,7 +98,7 @@ const Payment = () => {
                 Return to Store
               </button>
             </div>
-            <div className="flex-end">
+            <div className="twobtn flex-end">
               <button className="button button-link">Back to Shipping</button>
               <Link
                 href={{
