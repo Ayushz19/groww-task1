@@ -4,6 +4,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 1em;
     padding: 0px 25px;
+    overflow-x: hidden;
   }
   body a {
     color: #28333b;
@@ -142,7 +143,7 @@ body {
     color: white;
   }
   .card .card-body .payment-info .column {
-    width: calc(50% - 25px);
+    
   }
   .card .card-body .payment-info .title {
     display: flex;
@@ -209,11 +210,11 @@ body {
   @media only screen and (max-width: 600px)
   {
     .card{
-      width: 128%;
+      /* width: 128%; */
     }
 .payment-info
 {
-  width: max-content;
+ 
   
 }
 .button.button-secondary
@@ -224,6 +225,10 @@ body {
 .twobtn
 {
 display: flex;
+}
+.card-actions
+{
+  margin-left: -2rem;
 }
   }
   

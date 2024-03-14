@@ -1,6 +1,6 @@
 .bg {
     background-color: #6c7bee;
-    width: 480px;
+
     overflow: hidden;
     margin: 0 auto;
     box-sizing: border-box;
@@ -19,11 +19,13 @@
     text-align: center;
     position: relative;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
   }
   .card__success {
     position: absolute;
     top: -50px;
-    left: 145px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -33,22 +35,24 @@
   .card__success1 {
     position: absolute;
     top: -50px;
-    left: 145px;
+    left: 50%;
     width: 100px;
     height: 100px;
     border-radius: 100%;
     background-color: #bf2311;
     border: 5px solid #fff;
+    transform: translateX(-50%);
   }
   .card__success2 {
     position: absolute;
     top: -50px;
-    left: 145px;
+    left: 50%;
     width: 100px;
     height: 100px;
     border-radius: 100%;
     background-color: #cf932c;
     border: 5px solid #fff;
+    transform: translateX(-50%);
   }
   .card__success , .card__success1 , .card__success2 i {
     color: #fff;
